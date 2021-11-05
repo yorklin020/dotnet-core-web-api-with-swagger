@@ -43,7 +43,7 @@ namespace ASP.NET_Core_Web_API_with_Swagger.Controllers
         }
 
         [HttpGet]
-        [Route("GetAllProducts/{id}")]
+        [Route("GetProductDetail/{id}")]
         public IActionResult GetProductDetail(int id)
         {
             var result = Data.Where(x => x.Id == id);
